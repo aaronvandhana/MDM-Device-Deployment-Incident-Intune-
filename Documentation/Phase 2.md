@@ -86,3 +86,5 @@ instead. The host machine has:
 - No domain join conflict
 
 Connected Alie's work account
+
+Screenshot: P2_05_MicrosoftIntune_Devices.png
