@@ -59,6 +59,7 @@ Coming soon.
 * Microsoft Entra ID (Conditional Access)
 * Microsoft 365 Business Premium (trial tenant)
 * Windows 11
+* VirtualBox
 * osTicket (self-hosted via XAMPP)
 * GitHub
 
