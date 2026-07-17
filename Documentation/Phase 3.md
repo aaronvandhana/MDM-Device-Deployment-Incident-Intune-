@@ -22,7 +22,7 @@ Screenshot: P3_01_Compliance_Policy.png
 ---
 ## Step 2: Confirm Policy Deployment and Device Compliance Status
 Confirmed the AaronLab Windows Compliance Policy was created and 
-active under Devices — Compliance — Policies, assigned by default 
+active under Devices > Compliance > Policies, assigned by default 
 scope tag with a last modified timestamp matching creation.
 
 After the policy synced, DESKTOP-1QBQANA (enrolled under 
@@ -39,13 +39,13 @@ on the overall status:
 ### Issue Encountered
 A Norton 360 forced resubscription and reinstall triggered a 
 restart on the host machine during testing. This was initially 
-assumed to be the cause of a firewall-related failure, since 
+assumed to be the cause of a firewall related failure, since 
 Windows had handed firewall management off to Norton and the 
 native Windows Defender Firewall toggle was greyed out.
 
 ### Resolution
-The per-setting detail view showed firewall and Defender were 
-both still compliant — the actual failure was BitLocker, which 
+The per setting detail view showed firewall and Defender were 
+both still compliant; the actual failure was BitLocker, which 
 was not enabled on the host machine. This is a realistic 
 compliance gap for a personally-owned device enrolled as BYOD, 
 and was used as the root cause going forward instead of the 
@@ -67,7 +67,7 @@ defaults must be disabled before a Conditional Access policy can
 be enabled.
 
 ### Resolution
-Disabled security defaults under Entra ID — Overview — Properties, 
+Disabled security defaults under Entra ID > Overview > Properties, 
 since this is a single-tenant lab with no other dependent policies. 
 Noted for documentation that this tradeoff would need more 
 consideration in a production tenant.
@@ -96,7 +96,7 @@ the formal support workflow.
 - **Source:** Web (end user portal, http://localhost:8080/osticket/)
 
 The ticket description reflects what a real end user would 
-report — the symptom only, with no technical detail about 
+report; the symptom only, with no technical detail about 
 compliance policies, plus one detail she noticed on her own 
 (a recent Norton antivirus reinstall and restart).
 
@@ -104,8 +104,8 @@ Screenshot: P3_04_Ticket617768.png
 ---
 ## Outcome
 By the end of Phase 3, the environment has a working, tested 
-enforcement chain: compliance policy (Intune) — non-compliant 
-device — Conditional Access (Entra ID) — enforced block — real 
-user impact — incident ticket opened. Phase 4 will work this 
+enforcement chain: compliance policy (Intune) > non-compliant 
+device > Conditional Access (Entra ID) > enforced block > real 
+user impact > incident ticket opened. Phase 4 will work this 
 incident inside osTicket using the CompTIA 6-step troubleshooting 
 methodology.
