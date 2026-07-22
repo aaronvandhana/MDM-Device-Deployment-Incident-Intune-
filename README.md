@@ -51,7 +51,7 @@ restored with no changes required to either policy.
 
 ## Video Walkthrough
 
-Coming soon.
+[Loom](https://www.loom.com/share/2db073643b214915b183d035bb6d50be) or [YouTube](https://youtu.be/cYoU1XOPwTc)
 
 ## Tools Used
 
@@ -85,6 +85,7 @@ Coming soon.
   and closed out the resolution.
 * **Day 5:** GitHub documentation and README writeup. Video 
   walkthrough to follow.
+* **Day 6:** Video Walkthrough recorded & posted.
 
 ## Key Accomplishments
 
